@@ -231,7 +231,7 @@ key_string_lookup_string(const char *string)
 		else if (key == 63)
 			key = KEYC_BSPACE;
 		else
-			return (KEYC_UNKNOWN);
+			return (key | modifiers);
 		modifiers &= ~KEYC_CTRL;
 	}
 
